@@ -1,0 +1,69 @@
+/* Variables */
+:root {
+    --primary-color: #3f302c;
+    --secondary-color: #fafafa;
+    --accent-color: #8b8b8b;
+    --font-family: 'Google Sans', 'Montserrat', 'Roboto', 'TikTok Sans', sans-serif;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: var(--secondary-color);
+    font-weight: 200;
+    opacity: 0.9;
+}
+
+/* main Styles */
+.primary-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    height: 730px;
+}
+
+.primary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.primary-nav li {
+    margin: 0 30px;
+}
+
+.primary-nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+/* footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-size: 0.9em;
+}
