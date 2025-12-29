@@ -29,9 +29,10 @@ header h1 {
     color: var(--secondary-color);
     font-weight: 200;
     opacity: 0.9;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
-/* main Styles */
+/* Main Styles */
 .primary-nav {
     display: flex;
     justify-content: center;
@@ -49,17 +50,56 @@ header h1 {
 
 .primary-nav li {
     margin: 0 30px;
+    font-size: 2rem;
 }
 
 .primary-nav a {
     color: var(--secondary-color);
     text-decoration: none;
+    font-weight: 200;
     margin: 0 15px;
-    font-size: 1.2em;
     transition: color 0.3s;
 }
 
-/* footer Styles */
+.primary-nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Tooltip Styles */
+.tooltip {
+    visibility: hidden;
+    width: 140px;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 1rem;
+    bottom: 52%;
+    transform: translateX(-90%);
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--accent-color) transparent transparent transparent;
+}
+
+.tool-link:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 15px 0;

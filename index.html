@@ -11,7 +11,7 @@
     <meta property="og:description" content="A simple tooltip UI component example.">
     <title>Tooltip UI</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
@@ -23,9 +23,15 @@
     <main>
         <nav class="primary-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="#" class="tool-link">Home<span class="tooltip">Go to homepage</span></a>   
+                </li>
+                <li>
+                    <a href="https://github.com/Ryan-carrot?tab=repositories" class="tool-link">My Projects<span class="tooltip">View projects I have worked on.</span></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ryan-christian-74166a218/" class="tool-link">Contact<span class="tooltip">Get in touch</span></a>
+                </li>
             </ul>
         </nav>
     </main>
